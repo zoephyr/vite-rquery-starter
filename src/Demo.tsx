@@ -1,4 +1,4 @@
-import { useQuery, useMutation, useQueryClient, InvalidateQueryFilters } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient} from "@tanstack/react-query";
 import { fetchFiles, addFile } from "./api";
 import FileCard from "./components/FileCard";
 import { FileResource } from "./lib/ClassFile";
