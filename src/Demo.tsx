@@ -17,7 +17,7 @@ export default function Demo() {
   const { mutateAsync: addFileMutation } = useMutation({
     mutationFn: addFile,
     onSuccess: () => {
-        queryClient.invalidateQueries(["files"] as InvalidateQueryFilters);
+        queryClient.invalidateQueries({queryKey: ["files"]})
     }
   });
 
